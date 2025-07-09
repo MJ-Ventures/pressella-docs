@@ -6,12 +6,16 @@ const Home = () => (
   <div className={styles.home}>
     <h1>Welcome to the Legal Pages</h1>
     <nav>
-      <ul>
+      <ul className={styles.buttonList}>
         <li>
-          <Link href="/legal/privacy">Privacy Policy</Link>
+          <Link href="/privacy" className={styles.button}>
+            Privacy Policy
+          </Link>
         </li>
         <li>
-          <Link href="/legal/terms">Terms of Service</Link>
+          <Link href="/terms" className={styles.button}>
+            Terms of Service
+          </Link>
         </li>
       </ul>
     </nav>
